@@ -1,0 +1,13 @@
+# 파이썬 엔진 의존성
+# ⚠️ Python 3.14 필요 — numba 0.66+가 3.14를 지원해야 stumpy가 설치됨.
+#    설치: py -3.14 -m venv .venv  →  .venv 활성화  →  pip install -r requirements.txt
+
+numpy==2.4.6
+pandas==3.0.3
+pyarrow==25.0.0        # parquet 캐시(pandas to_parquet/read_parquet)
+ccxt==4.5.65           # 바이낸스 공개 데이터 (API 키 불필요)
+stumpy==1.14.1         # Matrix Profile (numba 0.66을 자동으로 끌어옴)
+numba==0.66.0          # Python 3.14 호환 핵심 — 명시적으로 고정
+scipy==1.18.0          # k-means 클러스터링 (precursor)
+fastapi==0.139.1
+uvicorn[standard]==0.51.0
