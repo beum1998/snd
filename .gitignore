@@ -1,0 +1,31 @@
+# --- Python ---
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Node / Next.js ---
+node_modules/
+web/node_modules/
+web/.next/
+web/out/
+web/next-env.d.ts
+*.tsbuildinfo
+
+# --- 데이터 캐시 (바이낸스 공개 데이터, API 키 없이 재생성 가능) ---
+data/*.parquet
+output/
+
+# --- 환경/비밀 ---
+.env
+.env.*
+*.key
+*.pem
+
+# --- OS / 에디터 ---
+.DS_Store
+Thumbs.db
+.idea/
+*.log
